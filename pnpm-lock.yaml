@@ -24,6 +24,9 @@ importers:
       '@nuxtjs/tailwindcss':
         specifier: ^6.11.4
         version: 6.11.4(rollup@4.14.3)
+      '@types/js-yaml':
+        specifier: ^4.0.9
+        version: 4.0.9
       '@vueuse/components':
         specifier: ^10.9.0
         version: 10.9.0(vue@3.4.23)
@@ -33,9 +36,15 @@ importers:
       '@vueuse/nuxt':
         specifier: ^10.9.0
         version: 10.9.0(nuxt@3.11.2(@parcel/watcher@2.4.1)(@types/node@20.12.7)(@unocss/reset@0.59.3)(async-validator@4.2.5)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.14.3))(vue@3.4.23))(ioredis@5.4.0)(rollup@4.14.3)(sass@1.75.0)(terser@5.30.3)(unocss@0.59.3(postcss@8.4.38)(rollup@4.14.3)(vite@5.2.9(@types/node@20.12.7)(sass@1.75.0)(terser@5.30.3)))(vite@5.2.9(@types/node@20.12.7)(sass@1.75.0)(terser@5.30.3)))(rollup@4.14.3)(vue@3.4.23)
+      '@vueuse/shared':
+        specifier: ^10.9.0
+        version: 10.9.0(vue@3.4.23)
       element-plus:
         specifier: ^2.6.3
         version: 2.6.3(vue@3.4.23)
+      js-yaml:
+        specifier: ^4.1.0
+        version: 4.1.0
       sass:
         specifier: ^1.75.0
         version: 1.75.0
@@ -886,6 +895,9 @@ packages:
 
   '@types/http-proxy@1.17.14':
     resolution: {integrity: sha512-SSrD0c1OQzlFX7pGu1eXxSEjemej64aaNPRhhVYUGqXh0BtldAAx37MG8btcumvpgKyZp1F5Gn3JkktdxiFv6w==}
+
+  '@types/js-yaml@4.0.9':
+    resolution: {integrity: sha512-k4MGaQl5TGo/iipqb2UDG2UwjXziSWkh0uysQelTlJpX1qGlpUZYm8PnO4DxG1qBomtJUdYJ6qR6xdIah10JLg==}
 
   '@types/lodash-es@4.17.12':
     resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
@@ -4952,6 +4964,8 @@ snapshots:
   '@types/http-proxy@1.17.14':
     dependencies:
       '@types/node': 20.12.7
+
+  '@types/js-yaml@4.0.9': {}
 
   '@types/lodash-es@4.17.12':
     dependencies:

@@ -17,10 +17,13 @@
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.8",
     "@nuxtjs/tailwindcss": "^6.11.4",
-    "sass": "^1.75.0",
+    "@types/js-yaml": "^4.0.9",
     "@vueuse/components": "^10.9.0",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
-    "element-plus": "^2.6.3"
+    "@vueuse/shared": "^10.9.0",
+    "element-plus": "^2.6.3",
+    "js-yaml": "^4.1.0",
+    "sass": "^1.75.0"
   }
 }
