@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "nuxt": "^3.11.2",
-    "vue": "^3.4.21",
+    "vue": "^3.4.23",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@element-plus/nuxt": "^1.0.8",
     "@vueuse/components": "^10.9.0",
     "@vueuse/core": "^10.9.0",
-    "@vueuse/nuxt": "^10.9.0"
+    "@vueuse/nuxt": "^10.9.0",
+    "element-plus": "^2.6.3"
   }
 }
