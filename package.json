@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.8",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "sass": "^1.75.0",
     "@vueuse/components": "^10.9.0",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",

@@ -40,7 +40,7 @@ const {
   </div>
 </template>
 
-<style lang="postcss" scoped>
+<style lang="scss" scoped>
 i {
   @apply text-2xl opacity-50 m-auto;
 }
