@@ -23,7 +23,7 @@ devDependencies:
     specifier: ^1.0.8
     version: 1.0.8(@element-plus/icons-vue@2.3.1)(element-plus@2.6.3)
   '@nuxtjs/tailwindcss':
-    specifier: ^6.11.4
+    specifier: ^6.12.0
     version: 6.12.0
   '@types/js-yaml':
     specifier: ^4.0.9
@@ -58,6 +58,9 @@ devDependencies:
   '@vueuse/shared':
     specifier: ^10.9.0
     version: 10.9.0(vue@3.4.23)
+  autoprefixer:
+    specifier: ^10.4.19
+    version: 10.4.19(postcss@8.4.38)
   element-plus:
     specifier: ^2.6.3
     version: 2.6.3(vue@3.4.23)
@@ -67,12 +70,18 @@ devDependencies:
   js-yaml:
     specifier: ^4.1.0
     version: 4.1.0
+  postcss:
+    specifier: ^8.4.38
+    version: 8.4.38
   rxjs:
     specifier: ^7.8.1
     version: 7.8.1
   sass:
     specifier: ^1.75.0
     version: 1.75.0
+  tailwindcss:
+    specifier: ^3.4.3
+    version: 3.4.3
 
 packages:
 
