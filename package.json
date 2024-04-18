@@ -12,6 +12,7 @@
   "dependencies": {
     "nuxt": "^3.11.2",
     "vue": "^3.4.23",
+    "vue-demi": "^0.14.7",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
@@ -20,10 +21,18 @@
     "@types/js-yaml": "^4.0.9",
     "@vueuse/components": "^10.9.0",
     "@vueuse/core": "^10.9.0",
+    "@vueuse/firebase": "^10.9.0",
+    "@vueuse/head": "^2.0.0",
+    "@vueuse/math": "^10.9.0",
+    "@vueuse/motion": "^2.1.0",
     "@vueuse/nuxt": "^10.9.0",
+    "@vueuse/router": "^10.9.0",
+    "@vueuse/rxjs": "^10.9.0",
     "@vueuse/shared": "^10.9.0",
     "element-plus": "^2.6.3",
+    "firebase": "^10.11.0",
     "js-yaml": "^4.1.0",
+    "rxjs": "^7.8.1",
     "sass": "^1.75.0"
   }
 }
