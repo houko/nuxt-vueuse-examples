@@ -27,6 +27,9 @@ importers:
       '@element-plus/nuxt':
         specifier: ^1.0.8
         version: 1.0.8(@element-plus/icons-vue@2.3.1(vue@3.4.23))(element-plus@2.6.3(vue@3.4.23))(rollup@4.14.3)
+      '@formkit/auto-animate':
+        specifier: ^0.8.2
+        version: 0.8.2
       '@nuxtjs/i18n':
         specifier: ^8.3.0
         version: 8.3.0(rollup@4.14.3)(vue@3.4.23)
@@ -655,6 +658,9 @@ packages:
 
   '@floating-ui/utils@0.2.1':
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
+
+  '@formkit/auto-animate@0.8.2':
+    resolution: {integrity: sha512-SwPWfeRa5veb1hOIBMdzI+73te5puUBHmqqaF1Bu7FjvxlYSz/kJcZKSa9Cg60zL0uRNeJL2SbRxV6Jp6Q1nFQ==}
 
   '@grpc/grpc-js@1.9.14':
     resolution: {integrity: sha512-nOpuzZ2G3IuMFN+UPPpKrC6NsLmWsTqSsm66IRfnBt1D4pwTqE27lmbpcPM+l2Ua4gE7PfjRHI6uedAy7hoXUw==}
@@ -5204,6 +5210,8 @@ snapshots:
       '@floating-ui/utils': 0.2.1
 
   '@floating-ui/utils@0.2.1': {}
+
+  '@formkit/auto-animate@0.8.2': {}
 
   '@grpc/grpc-js@1.9.14':
     dependencies:
