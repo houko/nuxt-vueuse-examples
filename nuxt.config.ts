@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
@@ -20,6 +19,20 @@ export default defineNuxtConfig({
     "@element-plus/nuxt",
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
-    '@pinia-plugin-persistedstate/nuxt'
-  ]
+    '@pinia-plugin-persistedstate/nuxt',
+    "@nuxtjs/i18n"
+  ],
+  i18n: {
+    compilation:{
+      strictMessage: false,
+      jit: true
+    },
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en-US.ts' },
+      { code: 'zh', iso: 'zh-CN', file: 'zh-CN.ts' }
+    ],
+    defaultLocale: 'zh',
+    langDir: 'locales/',
+    lazy: true,
+  }
 })
