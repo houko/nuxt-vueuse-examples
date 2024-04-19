@@ -21,7 +21,9 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     '@pinia-plugin-persistedstate/nuxt',
     "@nuxtjs/i18n",
-    '@formkit/auto-animate'
+    '@formkit/auto-animate',
+    '@nuxtjs/color-mode',
+    '@nuxt/image'
   ],
   i18n: {
     compilation:{
