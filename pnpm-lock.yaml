@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      async-validator:
-        specifier: ^4.2.5
-        version: 4.2.5
       axios:
         specifier: ^1.6.8
         version: 1.6.8
@@ -33,6 +30,12 @@ importers:
       '@nuxtjs/tailwindcss':
         specifier: ^6.12.0
         version: 6.12.0(rollup@4.14.3)
+      '@pinia-plugin-persistedstate/nuxt':
+        specifier: ^1.2.0
+        version: 1.2.0(@pinia/nuxt@0.5.1(rollup@4.14.3)(vue@3.4.23))(pinia@2.1.7(vue@3.4.23))(rollup@4.14.3)
+      '@pinia/nuxt':
+        specifier: ^0.5.1
+        version: 0.5.1(rollup@4.14.3)(vue@3.4.23)
       '@types/js-yaml':
         specifier: ^4.0.9
         version: 4.0.9
@@ -48,9 +51,6 @@ importers:
       '@vueuse/head':
         specifier: ^2.0.0
         version: 2.0.0(vue@3.4.23)
-      '@vueuse/integrations':
-        specifier: ^10.9.0
-        version: 10.9.0(async-validator@4.2.5)(axios@1.6.8)(change-case@5.4.4)(drauu@0.4.0)(focus-trap@7.5.4)(fuse.js@7.0.0)(idb-keyval@6.2.1)(jwt-decode@4.0.0)(nprogress@0.2.0)(qrcode@1.5.3)(sortablejs@1.15.2)(universal-cookie@7.1.4)(vue@3.4.23)
       '@vueuse/math':
         specifier: ^10.9.0
         version: 10.9.0(vue@3.4.23)
@@ -75,42 +75,18 @@ importers:
       element-plus:
         specifier: ^2.6.3
         version: 2.6.3(vue@3.4.23)
-      firebase:
-        specifier: ^10.11.0
-        version: 10.11.0
-      fuse.js:
-        specifier: ^7.0.0
-        version: 7.0.0
-      idb-keyval:
-        specifier: ^6.2.1
-        version: 6.2.1
       js-yaml:
         specifier: ^4.1.0
         version: 4.1.0
-      nprogress:
-        specifier: ^0.2.0
-        version: 0.2.0
-      postcss:
-        specifier: ^8.4.38
-        version: 8.4.38
-      qrcode:
-        specifier: ^1.5.3
-        version: 1.5.3
-      rxjs:
-        specifier: ^7.8.1
-        version: 7.8.1
+      pinia:
+        specifier: ^2.1.7
+        version: 2.1.7(vue@3.4.23)
       sass:
         specifier: ^1.75.0
         version: 1.75.0
-      sortablejs:
-        specifier: ^1.15.2
-        version: 1.15.2
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.3
-      universal-cookie:
-        specifier: ^7.1.4
-        version: 7.1.4
 
 packages:
 
@@ -920,6 +896,14 @@ packages:
   '@parcel/watcher@2.4.1':
     resolution: {integrity: sha512-HNjmfLQEVRZmHRET336f20H/8kOozUGwk7yajvsonjNxbj2wBTK1WsQuHkD5yYh9RxFGL2EyDHryOihOwUoKDA==}
     engines: {node: '>= 10.0.0'}
+
+  '@pinia-plugin-persistedstate/nuxt@1.2.0':
+    resolution: {integrity: sha512-2rtgx5viGSMQMCoFYZMHguA2FhFKCUvw0PwETfqQegsWeBHlqk1/D0G/9xqep8Hq+c1BuFx+jNLJzoLXtYfivg==}
+    peerDependencies:
+      '@pinia/nuxt': ^0.5.0
+
+  '@pinia/nuxt@0.5.1':
+    resolution: {integrity: sha512-6wT6TqY81n+7/x3Yhf0yfaJVKkZU42AGqOR0T3+UvChcaOJhSma7OWPN64v+ptYlznat+fS1VTwNAcbi2lzHnw==}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -3265,6 +3249,23 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
+  pinia-plugin-persistedstate@3.2.1:
+    resolution: {integrity: sha512-MK++8LRUsGF7r45PjBFES82ISnPzyO6IZx3CH5vyPseFLZCk1g2kgx6l/nW8pEBKxxd4do0P6bJw+mUSZIEZUQ==}
+    peerDependencies:
+      pinia: ^2.0.0
+
+  pinia@2.1.7:
+    resolution: {integrity: sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.3.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+
   pirates@4.0.6:
     resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
     engines: {node: '>= 6'}
@@ -5553,6 +5554,28 @@ snapshots:
       '@parcel/watcher-win32-ia32': 2.4.1
       '@parcel/watcher-win32-x64': 2.4.1
 
+  '@pinia-plugin-persistedstate/nuxt@1.2.0(@pinia/nuxt@0.5.1(rollup@4.14.3)(vue@3.4.23))(pinia@2.1.7(vue@3.4.23))(rollup@4.14.3)':
+    dependencies:
+      '@nuxt/kit': 3.11.2(rollup@4.14.3)
+      '@pinia/nuxt': 0.5.1(rollup@4.14.3)(vue@3.4.23)
+      defu: 6.1.4
+      pinia-plugin-persistedstate: 3.2.1(pinia@2.1.7(vue@3.4.23))
+    transitivePeerDependencies:
+      - pinia
+      - rollup
+      - supports-color
+
+  '@pinia/nuxt@0.5.1(rollup@4.14.3)(vue@3.4.23)':
+    dependencies:
+      '@nuxt/kit': 3.11.2(rollup@4.14.3)
+      pinia: 2.1.7(vue@3.4.23)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - rollup
+      - supports-color
+      - typescript
+      - vue
+
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
@@ -5742,7 +5765,8 @@ snapshots:
       '@tufjs/canonical-json': 2.0.0
       minimatch: 9.0.4
 
-  '@types/cookie@0.6.0': {}
+  '@types/cookie@0.6.0':
+    optional: true
 
   '@types/estree@1.0.5': {}
 
@@ -6541,7 +6565,8 @@ snapshots:
 
   camelcase-css@2.0.1: {}
 
-  camelcase@5.3.1: {}
+  camelcase@5.3.1:
+    optional: true
 
   camelcase@6.3.0: {}
 
@@ -6605,6 +6630,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 6.2.0
+    optional: true
 
   cliui@8.0.1:
     dependencies:
@@ -6676,7 +6702,8 @@ snapshots:
 
   cookie-es@1.1.0: {}
 
-  cookie@0.6.0: {}
+  cookie@0.6.0:
+    optional: true
 
   cookies@0.9.1:
     dependencies:
@@ -6798,7 +6825,8 @@ snapshots:
     dependencies:
       ms: 2.1.2
 
-  decamelize@1.2.0: {}
+  decamelize@1.2.0:
+    optional: true
 
   deep-equal@1.0.1: {}
 
@@ -6841,7 +6869,8 @@ snapshots:
 
   diff@5.2.0: {}
 
-  dijkstrajs@1.0.3: {}
+  dijkstrajs@1.0.3:
+    optional: true
 
   dlv@1.1.3: {}
 
@@ -6907,7 +6936,8 @@ snapshots:
 
   emoji-regex@9.2.2: {}
 
-  encode-utf8@1.0.3: {}
+  encode-utf8@1.0.3:
+    optional: true
 
   encodeurl@1.0.2: {}
 
@@ -7048,6 +7078,7 @@ snapshots:
     dependencies:
       locate-path: 5.0.0
       path-exists: 4.0.0
+    optional: true
 
   find-up@5.0.0:
     dependencies:
@@ -7148,7 +7179,8 @@ snapshots:
 
   function-bind@1.1.2: {}
 
-  fuse.js@7.0.0: {}
+  fuse.js@7.0.0:
+    optional: true
 
   gauge@3.0.2:
     dependencies:
@@ -7363,7 +7395,8 @@ snapshots:
       safer-buffer: 2.1.2
     optional: true
 
-  idb-keyval@6.2.1: {}
+  idb-keyval@6.2.1:
+    optional: true
 
   idb@7.1.1: {}
 
@@ -7641,6 +7674,7 @@ snapshots:
   locate-path@5.0.0:
     dependencies:
       p-locate: 4.1.0
+    optional: true
 
   locate-path@6.0.0:
     dependencies:
@@ -8043,7 +8077,8 @@ snapshots:
       gauge: 3.0.2
       set-blocking: 2.0.0
 
-  nprogress@0.2.0: {}
+  nprogress@0.2.0:
+    optional: true
 
   nth-check@2.1.1:
     dependencies:
@@ -8237,6 +8272,7 @@ snapshots:
   p-limit@2.3.0:
     dependencies:
       p-try: 2.2.0
+    optional: true
 
   p-limit@3.1.0:
     dependencies:
@@ -8245,6 +8281,7 @@ snapshots:
   p-locate@4.1.0:
     dependencies:
       p-limit: 2.3.0
+    optional: true
 
   p-locate@5.0.0:
     dependencies:
@@ -8254,7 +8291,8 @@ snapshots:
     dependencies:
       aggregate-error: 3.1.0
 
-  p-try@2.2.0: {}
+  p-try@2.2.0:
+    optional: true
 
   pacote@17.0.7:
     dependencies:
@@ -8324,6 +8362,16 @@ snapshots:
 
   pify@2.3.0: {}
 
+  pinia-plugin-persistedstate@3.2.1(pinia@2.1.7(vue@3.4.23)):
+    dependencies:
+      pinia: 2.1.7(vue@3.4.23)
+
+  pinia@2.1.7(vue@3.4.23):
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      vue: 3.4.23
+      vue-demi: 0.14.7(vue@3.4.23)
+
   pirates@4.0.6: {}
 
   pkg-types@1.0.3:
@@ -8332,7 +8380,8 @@ snapshots:
       mlly: 1.6.1
       pathe: 1.1.2
 
-  pngjs@5.0.0: {}
+  pngjs@5.0.0:
+    optional: true
 
   popmotion@11.0.5:
     dependencies:
@@ -8587,6 +8636,7 @@ snapshots:
       encode-utf8: 1.0.3
       pngjs: 5.0.0
       yargs: 15.4.1
+    optional: true
 
   queue-microtask@1.2.3: {}
 
@@ -8667,7 +8717,8 @@ snapshots:
 
   require-directory@2.1.1: {}
 
-  require-main-filename@2.0.0: {}
+  require-main-filename@2.0.0:
+    optional: true
 
   resolve-from@5.0.0: {}
 
@@ -8855,7 +8906,8 @@ snapshots:
       ip-address: 9.0.5
       smart-buffer: 4.2.0
 
-  sortablejs@1.15.2: {}
+  sortablejs@1.15.2:
+    optional: true
 
   source-map-js@1.2.0: {}
 
@@ -9178,6 +9230,7 @@ snapshots:
     dependencies:
       '@types/cookie': 0.6.0
       cookie: 0.6.0
+    optional: true
 
   universalify@2.0.1: {}
 
@@ -9470,7 +9523,8 @@ snapshots:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
 
-  which-module@2.0.1: {}
+  which-module@2.0.1:
+    optional: true
 
   which@2.0.2:
     dependencies:
@@ -9493,6 +9547,7 @@ snapshots:
       ansi-styles: 4.3.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
+    optional: true
 
   wrap-ansi@7.0.0:
     dependencies:
@@ -9510,7 +9565,8 @@ snapshots:
 
   ws@8.16.0: {}
 
-  y18n@4.0.3: {}
+  y18n@4.0.3:
+    optional: true
 
   y18n@5.0.8: {}
 
@@ -9524,6 +9580,7 @@ snapshots:
     dependencies:
       camelcase: 5.3.1
       decamelize: 1.2.0
+    optional: true
 
   yargs-parser@21.1.1: {}
 
@@ -9540,6 +9597,7 @@ snapshots:
       which-module: 2.0.1
       y18n: 4.0.3
       yargs-parser: 18.1.3
+    optional: true
 
   yargs@17.7.2:
     dependencies:

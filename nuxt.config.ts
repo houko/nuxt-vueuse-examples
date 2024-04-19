@@ -18,6 +18,8 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     '@vueuse/motion/nuxt',
     "@element-plus/nuxt",
-    "@nuxtjs/tailwindcss"
+    "@nuxtjs/tailwindcss",
+    "@pinia/nuxt",
+    '@pinia-plugin-persistedstate/nuxt'
   ]
 })
