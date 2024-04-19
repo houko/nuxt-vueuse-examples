@@ -23,7 +23,10 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     '@formkit/auto-animate',
     '@nuxtjs/color-mode',
-    '@nuxt/image'
+    '@nuxt/image',
+    'nuxt-swiper',
+    '@vee-validate/nuxt',
+    'nuxt-icon'
   ],
   i18n: {
     compilation:{
