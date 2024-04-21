@@ -6,11 +6,8 @@ export default defineNuxtPlugin((nuxtApp) => {
         getSSRProps(bind,vnode) {
             return {
                 value: bind.value,
-                arg: bind.arg,
-                modifiers: bind.modifiers,
             }
         }
     },
-    
     );
 });

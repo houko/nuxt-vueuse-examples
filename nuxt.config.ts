@@ -32,7 +32,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-swiper',
     '@vee-validate/nuxt',
-    'nuxt-icon'
+    'nuxt-icon',
+    "@nuxt/content"
   ],
   i18n: {
     compilation:{

@@ -8,5 +8,4 @@
 
 <script setup lang="ts">
 const { $hello } = useNuxtApp();
-$hello("xiaomo");
 </script>
