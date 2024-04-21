@@ -1,12 +1,18 @@
+import { resolve } from 'path';
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
-
     timeline: {
       enabled: true
     }
   },
-  css: ["~/assets/css/tailwind.css"],
+  alias: {
+    '@': resolve(__dirname),
+  },
+  ssr: true,
+  css: [
+    "~/assets/css/tailwind.css"
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
